@@ -19,7 +19,7 @@ export default function Describe({ marginTop }) {
                         <div className=' relative transform scale-125 md:scale-150 hover:scale-[1.75] transition-transform duration-300  z-10'>
                             <Image unoptimized src={"/assits/9b2418014ec8bfa6c4453f26c54e57c8.png"} width={400} height={400} alt="" className="relative  z-10" />
                         </div><h4 className='text-center  lg:mt-10 font-vazir text-white  font-extrabold text-2xl'>مؤسسه خيريه</h4>
-                    </div>
+                    </div> 
                 </Link>
                 <Link href={"/IncubatorSignUp"} className='w-full xs:w-[50%] lg:w-[25%] md:p-5 lg:p-7 my-5'>
                     <div className=" w-[80%] mx-auto h-[300px]   bg-gray-700 rounded-[40px] bg-clip-padding backdrop-filter backdrop-blur-md bg-opacity-20 ">
