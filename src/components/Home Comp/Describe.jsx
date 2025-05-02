@@ -1,8 +1,7 @@
 import React from 'react'
+import { Vazirmatn } from 'next/font/google';
 import Image from 'next/image'
 import Link from 'next/link';
-import { Vazirmatn } from 'next/font/google';
-
 const vazir = Vazirmatn({
     subsets: ['arabic'],
     weight: ['400', '700']
