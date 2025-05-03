@@ -105,7 +105,7 @@ function ResponsiveAppBar() {
 
 
   async function logout() {
-    await fetch("/api/auth/logout ", { method: "POST" });
+    await fetch("/api/auth/logout", { method: "POST" });
     await new Promise((resolve) => setTimeout(resolve, 300));
     router.push("/Login")
     dispatch(clearUserRole());
