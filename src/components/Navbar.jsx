@@ -94,7 +94,7 @@ function HideOnScroll({ children }) {
     </Slide>
   );
 }
-const pages = ['Products', 'Pricing', 'Blog'];
+const pages = ['Products', 'Pricin3g', 'Blog'];
 const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
 
 function ResponsiveAppBar() {
