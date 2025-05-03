@@ -96,11 +96,23 @@ export default function () {
             const { data } = await axios.post("https://estethmarat-estethmarats-projects.vercel.app/api/v1/auth/login", value);
             console.log(data);
 
-            await fetch("/api/auth/setToken", {
+            // await fetch("/api/auth/setToken", {
+            //     method: "POST",
+            //     headers: { "Content-Type": "application/json" },
+            //     body: JSON.stringify({ token: data.data.token, role: data.data.user.role, rememberMe: rememberme }),
+            // });
+
+
+            const res = await fetch("/api/auth/setToken", {
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
                 body: JSON.stringify({ token: data.data.token, role: data.data.user.role, rememberMe: rememberme }),
-            }); setLoading(false)
+            });
+
+            if (!res.ok) throw new Error("Failed to set token");
+
+
+            setLoading(false)
             dispatch(fetchUserRole());
 
             toast.custom((t) => (
@@ -127,6 +139,7 @@ export default function () {
                     </div>
                 </div>
             ), { duration: 5000 })
+            await new Promise((resolve) => setTimeout(resolve, 300));
             router.push("/homePage")
             return data;
         } catch (error) {
