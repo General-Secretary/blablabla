@@ -112,7 +112,7 @@ function ResponsiveAppBar() {
     toast.custom((t) => (
       <div
         className={`${t.visible ? 'animate-enter' : 'animate-leave'
-          } max-w-md w-full  bg-gray-700  bg-clip-padding backdrop-filter backdrop-blur-md bg-opacity-20 shadow-lg rounded-lg border-[#00F560] pointer-events-auto flex ring-1 ring-black ring-opacity-5`}
+          } max-w-md w-full  bg-gray-700   bg-clip-padding backdrop-filter backdrop-blur-md bg-opacity-20 shadow-lg rounded-lg border-[#00F560] pointer-events-auto flex ring-1 ring-black ring-opacity-5`}
       >
         <div className="flex-1 w-0 p-4">
           <div className="flex items-start">
